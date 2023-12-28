@@ -1,11 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-style.css">
+
+    <script src="https://kit.fontawesome.com/9e56a365c3.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisi UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <h2>hello</h2>
+
+<body class="font-helvetica">
+    <!-- Header -->
+    <header class="bg-[#202A43]">
+        <div class="container mx-auto">
+            <!-- Navbar -->
+
+            <div class="hidden lg:flex justify-between items-center pt-2">
+                <div class="">
+                    <a href=""><img class="w-14" src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="text-[#fff] text-xs font-medium flex justify-between gap-6 items-center">
+                    <a href="/">Home</a>
+                    <a href="">All categories</a>
+                    <a href="">Leads for business</a>
+                    <a href="">Plans</a>
+                    <a href="">Business listing</a>
+                    <a href="">About us</a>
+                    <a href="/article.html">Become an article publisher</a>
+                    <a href="">Contact us</a>
+                    <div class="flex gap-2">
+                        <a class="text-[#fff] rounded-full px-2 py-1 border border-[#fff]" href=""><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="text-[#fff] rounded-full px-2 py-1 border border-[#fff]" href=""><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a class="text-[#fff] rounded-full px-2 py-1 border border-[#fff]" href=""><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="text-[#fff] rounded-full px-2 py-1 border border-[#fff]" href=""><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="bg-gradient-to-r from-[#FFC04D] from-[8%] to-[#4BD37B] to-[103%] rounded-full px-6 py-2 text-xs font-moranga-medium text-[#111]">Play
+                            Games</button>
+                        <button
+                            class="border border-[#fff] text-[#fff] rounded-full px-6 py-2 text-xs font-moranga-medium">Sign
+                            up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex lg:hidden">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5" fill="none"
+                                    viewBox="0 0 24 24" stroke="#fff">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-[#fff] rounded-box w-52">
+                                <li></li>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">All categories</a></li>
+                                <li><a href="">Leads for business</a></li>
+                                <li><a href="">Plans</a></li>
+                                <li><a href="">Business listing</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="/article.html">Become an article publisher</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li class="md:hidden"><button
+                                        class="bg-gradient-to-r from-[#FFC04D] from-[8%] to-[#4BD37B] to-[103%] rounded-full px-6 py-2 text-xs font-moranga-medium text-[#111]">Play
+                                        Games</button></li>
+                                <li>
+                                    <div class="flex gap-2">
+                                        <a class="text-[#111] rounded-full px-2 py-1 border border-[#111]" href=""><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="text-[#111] rounded-full px-2 py-1 border border-[#111]" href=""><i
+                                                class="fa-brands fa-youtube"></i></a>
+                                        <a class="text-[#111] rounded-full px-2 py-1 border border-[#111]" href=""><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                        <a class="text-[#111] rounded-full px-2 py-1 border border-[#111]" href=""><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center">
+                        <a href=""><img class="w-14" src="assets/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-gradient-to-r from-[#FFC04D] from-[8%] to-[#4BD37B] to-[103%] rounded-full px-6 py-2 text-xs font-moranga-medium text-[#111]">Play
+                                Games</button>
+                            <button
+                                class="border border-[#fff] text-[#fff] rounded-full px-6 py-2 text-xs font-moranga-medium hidden md:flex lg:hidden">Sign
+                                up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="bg-[#F2ECE9]">
+
+        <!-- Main Articles -->
+
+        <div class="container mx-auto py-14">
+            <h2 class="text-[#B4ABA7] text-xs ">Home/ <span class="text-[#202A43]">Mental Health and Wellness</span>
+            </h2>
+            <div class="my-6">
+                <img src="assets/images/Rectangle 60.png" alt="">
+            </div>
+            <div class="grid grid-cols-3">
+
+                <div class="col-span-2">
+                    <p class="text-[#656B79] text-xs font-medium">Written By:</p>
+                    <div class="flex gap-4 items-center mt-6">
+                        <img class="w-10" src="assets/images/kprofile.png" alt="">
+                        <h2 class="text-[#384AD3] text-base">Kelly Williamson</h2>
+                        <p class="text-[#656B79] text-xs pt-1 pl-2">on April 15, 2023</p>
+                    </div>
+                    <h2 class="text-[#202A43] text-[54px] leading-[70px] py-8">Deep Breathing: A Complete Guide to the
+                        Relaxation Technique</h2>
+                    <p class="text-[#202A43] text-sm">If you’re reading this, you’re breathing. What’s interesting about
+                        breathing is we do it
+                        regardless of whether we’re thinking about it. Yet we can also voluntarily control our breathing
+                        when we are conscious of our breathing patterns. For example, we can choose to control our
+                        breath by slowing it down, speeding it up, or taking shallow or deep breaths.
+                        <br><br>
+                        How we breathe affects our health. By breathing more deeply or controlling our breath
+                        intentionally, we can impact our body in a number of positive ways, says. A certified yoga
+                        instructor and medical acupuncturist. “For starters, we can lower our blood pressure and stress
+                        level, and think more clearly,” he says. Feeling calm and centered after deep breathing is
+                        common, and a breathing practice can promote a greater sense of well-being, he says.
+                        <br>
+                        If you’re interested in how deep-breathing works and how it can be beneficial, keep reading to
+                        find out more about this valuable health tool that requires no special equipment and can be
+                        accessed at any moment of your day.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 my-12">
+                        <div class="">
+                            <img src="assets/images/Rectangle 61.png" alt="">
+                        </div>
+                        <div class="">
+                            <img src="assets/images/Rectangle 62.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="text-[#202A43] text-3xl mb-6">What Is Deep Breathing?</h2>
+                    <p class="text-[#202A43] text-sm">“There is an intentionality to deep breathing; you’re really
+                        trying to fill your lungs with air.
+                        In most cases, you’re not getting that when you are breathing normally,” says a doctor at the
+                        Center for Integrative Medicine at Cleveland Clinic Health System in Ohio. If your breath is
+                        shallow, you may be imposing stress on your body unintentionally, or the stress you feel may be
+                        contributing to shallow breathing. (More on this later.) When we’re deep breathing, though, the
+                        breath naturally slows down, says Dr. Bell. “When sitting down or doing a nonstrenuous activity,
+                        most people, on average, breathe in for about two seconds and breathe out for two seconds,” he
+                        says. That’s about what a typical respiration rate is when we’re not really consciously thinking
+                        about our breath.
+                        <br><br>
+                        Deep breathing requires you to relax your abdominal region while you take a deep breath in, says
+                        a clinical assistant professor and health psychologist at University of Michigan Health in Ann
+                        Arbor. “We are more slowly filling the lungs with air as we breathe in and allowing the lungs to
+                        expand, which will move the diaphragm [as it contracts]. At the exhale, we release all the air
+                        out” as the diaphragm relaxes and the chest wall recoils, she says. In focusing our awareness on
+                        this process, we can slow our breathing pattern, she says.
+                        <br><br>
+                        Controlling the breath can be part of a or practice, but breath-focused doesn’t have to be deep
+                        breathing, says Dr. Riehl. “Some yoga breathing can be similar to diaphragmatic breathing, but
+                        it can sometimes be very different. For example, [for] some breathing patterns in yoga, you are
+                        supposed to keep your mouth closed,” she says. In diaphragmatic breathing or deep breathing, you
+                        typically are encouraged to breathe in through the nose and out through the mouth, she says.
+                    </p>
+                    <hr class="border border-[#202A43] w-full mt-12 mb-8">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-3">
+                            <button class="text-sm font-medium border border-[#B4ABA7] px-8 py-3 rounded-full"><i
+                                    class="fa-regular fa-thumbs-up"></i></button>
+                            <button class="text-sm font-medium border border-[#B4ABA7] px-8 py-3 rounded-full"><i
+                                    class="fa-regular fa-comment"></i></button>
+                            <button class="text-sm font-medium border border-[#B4ABA7] px-8 py-3 rounded-full"><i
+                                    class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                        </div>
+                        <p class="text-[#656B79] text-base">April 15, 2023</p>
+                    </div>
+                    <hr class="border border-[#202A43] w-full mt-8 mb-12">
+                    <h2 class="text-[#202A43] text-3xl font-moranga-bold">Comments 365</h2>
+                    <div class="flex gap-4 my-10">
+                        <div class="">
+                            <img class="w-7" src="assets/images/dprofile.png" alt="">
+                        </div>
+                        <textarea class="w-full p-2" rows="4" placeholder="Write a comment"></textarea>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <div class="">
+                            <img class="w-7" src="assets/images/uprofile.png" alt="">
+                        </div>
+                        <div class="w-full">
+                            <p class="text-[#202A43] text-sm">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="flex gap-12 my-4">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(23)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(07)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(02)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 my-6">
+                        <div class="">
+                            <img class="w-7" src="assets/images/uprofile.png" alt="">
+                        </div>
+                        <div class="w-full">
+                            <p class="text-[#202A43] text-sm">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="flex gap-12 my-4">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(23)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(07)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(02)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <div class="">
+                            <img class="w-7" src="assets/images/uprofile.png" alt="">
+                        </div>
+                        <div class="w-full">
+                            <p class="text-[#202A43] text-sm">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="flex gap-12 my-4">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(23)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(07)</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">(02)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#fff] ml-14 flex items-center justify-center">
+                    <div class="flex justify-center items-center">
+                        <img class="w-2/3" src="assets/images/ads.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More Articles -->
+
+        <div class="container mx-auto">
+            <div class="">
+                <div class="flex justify-between py-8">
+                    <h2 class="text-[#202A43] text-4xl font-moranga-bold">Read more helpful articals</h2>
+                    <div class="flex gap-5">
+                        <button><i class="fa-solid fa-angle-left text-2xl font-bold"></i></button>
+                        <button><i class="fa-solid fa-angle-right text-2xl font-bold"></i></button>
+                    </div>
+                </div>
+
+                <hr class="border border-[#202A43] w-full mb-8">
+
+                <div class="grid grid-cols-4 gap-3">
+
+                    <div class="card card-compact rounded-none bg-[#fff] border border-[#D9D9D9]">
+                        <figure><img class="w-full" src="assets/images/Rectangle 44.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-5">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">Jack and Sekob
+                                </h2>
+                                <hr class="border border-[#B4ABA7] h-3">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">12 Nov, 2023</h2>
+                            </div>
+                            <h2 class="text-[#202A43] text-lg font-moranga-bold">How to Break In Faster</h2>
+                            <p class="text-[#656B79] text-xs font-medium font-helvetica">It takes an average of six
+                                years for a screenwriter to sell their first screenplay. Can you break in faster</p>
+                            <a class="text-[#384AD3] text-[13px] font-bold font-helvetica my-2" href="">READ MORE <i
+                                    class="fa-solid fa-angle-right ml-2"></i></a>
+                            <div class="flex justify-between">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">2,345</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">456</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact rounded-none bg-[#fff] border border-[#D9D9D9]">
+                        <figure><img class="w-full" src="assets/images/Rectangle 45.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-5">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">Jack and Sekob
+                                </h2>
+                                <hr class="border border-[#B4ABA7] h-3">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">12 Nov, 2023</h2>
+                            </div>
+                            <h2 class="text-[#202A43] text-lg font-moranga-bold">How to Break In Faster</h2>
+                            <p class="text-[#656B79] text-xs font-medium font-helvetica">It takes an average of six
+                                years for a screenwriter to sell their first screenplay. Can you break in faster</p>
+                            <a class="text-[#384AD3] text-[13px] font-bold font-helvetica my-2" href="">READ MORE <i
+                                    class="fa-solid fa-angle-right ml-2"></i></a>
+                            <div class="flex justify-between">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">2,345</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">456</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact rounded-none bg-[#fff] border border-[#D9D9D9]">
+                        <figure><img class="w-full" src="assets/images/Rectangle 46.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-5">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">Jack and Sekob
+                                </h2>
+                                <hr class="border border-[#B4ABA7] h-3">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">12 Nov, 2023</h2>
+                            </div>
+                            <h2 class="text-[#202A43] text-lg font-moranga-bold">How to Break In Faster</h2>
+                            <p class="text-[#656B79] text-xs font-medium font-helvetica">It takes an average of six
+                                years for a screenwriter to sell their first screenplay. Can you break in faster</p>
+                            <a class="text-[#384AD3] text-[13px] font-bold font-helvetica my-2" href="">READ MORE <i
+                                    class="fa-solid fa-angle-right ml-2"></i></a>
+                            <div class="flex justify-between">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">2,345</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">456</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact rounded-none bg-[#fff] border border-[#D9D9D9]">
+                        <figure><img class="w-full" src="assets/images/Rectangle 47.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="flex items-center gap-5">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">Jack and Sekob
+                                </h2>
+                                <hr class="border border-[#B4ABA7] h-3">
+                                <h2 class="text-[11px] text-[#656B79] font-helvetica font-medium">12 Nov, 2023</h2>
+                            </div>
+                            <h2 class="text-[#202A43] text-lg font-moranga-bold">How to Break In Faster</h2>
+                            <p class="text-[#656B79] text-xs font-medium font-helvetica">It takes an average of six
+                                years for a screenwriter to sell their first screenplay. Can you break in faster</p>
+                            <a class="text-[#384AD3] text-[13px] font-bold font-helvetica my-2" href="">READ MORE <i
+                                    class="fa-solid fa-angle-right ml-2"></i></a>
+                            <div class="flex justify-between">
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-thumbs-up"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">2,345</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i class="fa-regular fa-comment"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">456</p>
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <button class="text-sm font-medium"><i
+                                            class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                    <p class="text-[#685F5A] text-xs font-medium font-helvetica">321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center items-center">
+                    <button class="text-[#202A43] px-8 py-3 border border-[#202A43] rounded-full my-10">View all
+                        article</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Assistance -->
+        <div class="">
+            <div class="container mx-auto assbg bg-[#9747FF] lg:bg-[#F2ECE9]">
+                <div class="lg:assbg px-12 lg:py-[104px] md:py-[80px] py-[50px]">
+                    <h2 class="md:text-6xl text-4xl font-moranga-extrabold text-[#fff]">Need Assistance?</h2>
+                    <p class="font-helvetica font-medium text-lg text-[#fff] my-6">Reach out to us – We are here to help
+                    </p>
+                    <button
+                        class="bg-gradient-to-b from-[#F8D374] to-[#FFC42C] rounded-full px-6 py-3 text-xs font-moranga-bold">Contact
+                        us</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#F2ECE9]">
+        <div class="footerbg container mx-auto px-12 py-10">
+            <div class="flex md:justify-between justify-center text-[#fff] items-center">
+                <img class="w-40 h-40" src="assets/images/logo.png" alt="">
+                <div class="hidden lg:flex">
+                    <div class="text-xs font-medium">
+                        <h2 class="mb-10">Contact</h2>
+                        <div class="grid grid-cols-1 gap-2">
+                            <h2>23/D, Hawthorne Road, USA</h2>
+                            <h2>skin@andbeauty.com</h2>
+                            <h2>(480) 555-0103</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex">
+                    <div class="text-xs font-medium">
+                        <h2 class="mb-10">QUICK LINKS</h2>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="">All categories</a>
+                            <a class="ml-5" href="">Plans</a>
+                            <a href="">Leads for business</a>
+                            <a class="ml-5" href="">About us</a>
+                            <a href="">Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex">
+                    <div class="text-xs font-medium">
+                        <h2 class="mb-10">SOCIAL</h2>
+                        <div class="grid grid-cols-1 gap-2">
+                            <a href="">Facebook</a>
+                            <a href="">LinkedIn</a>
+                            <a href="">Instagram</a>
+                            <a href="">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex">
+                    <div class="text-xs font-medium">
+                        <h2 class="mb-10">NEWSLETTER</h2>
+                        <p>Get 15% off your first subscription from our newsletter</p>
+                        <div class="mt-6">
+                            <input type="email"
+                                class="inputbg py-2 px-3 w-60 border border-[#fff] border-r-0 rounded-l-xl rounded-r-none"
+                                placeholder="Email" />
+                            <button class="ml-[-12px] rounded-xl bg-[#384AD3] px-6 py-2 border-[#fff] border"><i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border border-[#54546E] w-full my-8">
+
+            <div class="text-[#fff] text-xs font-medium md:flex md:justify-between grid grid-cols-1 gap-4 md:gap-0">
+                <h2 class="text-center md:text-left">@2023 Iral connect. All right reserved</h2>
+                <h2 class="text-center md:text-left">Term condition and Privacy policy</h2>
+            </div>
+
+        </div>
+    </footer>
 </body>
+
 </html>
