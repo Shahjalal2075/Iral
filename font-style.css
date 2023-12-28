@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'MorangaMedium';
-    src: url(/assets/fonts/MorangaMedium.otf);
+    src: url(assets/fonts/MorangaMedium.otf);
 }
 @font-face {
     font-family: 'MorangaBold';
-    src: url(/assets/fonts/MorangaBold.otf);
+    src: url(assets/fonts/MorangaBold.otf);
 }
 @font-face {
     font-family: 'MorangaExtraBold';
-    src: url(/assets/fonts/MorangaExtraBold.otf);
+    src: url(assets/fonts/MorangaExtraBold.otf);
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url(/assets/fonts/Helvetica.otf);
+    src: url(assets/fonts/Helvetica.otf);
 }
 
 .font-moranga-medium{
