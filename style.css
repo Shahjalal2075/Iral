@@ -5,25 +5,25 @@
 }
 
 .marketingbg {
-    background-image: url(assets//images/marketingbg.png);
+    background-image: url(assets/images/marketingbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assbg {
-    background-image: url(assets//images/assbg.png);
+    background-image: url(assets/images/assbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .footerbg {
-    background-image: url(assets//images/footerbg.png);
+    background-image: url(assets/images/footerbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .inputbg {
-    background-image: url(assets//images/footerbg.png);
+    background-image: url(assets/images/footerbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
