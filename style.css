@@ -29,3 +29,9 @@
     border-radius: 12px;
     border: 1px solid #FFF;
 }
+
+.leadbg {
+    background-image: url(assets/images/leadbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
