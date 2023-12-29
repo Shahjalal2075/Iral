@@ -35,3 +35,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.businessbg {
+    background-image: url(assets/images/businessbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
