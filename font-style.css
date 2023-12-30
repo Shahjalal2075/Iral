@@ -16,6 +16,11 @@
     src: url(assets/fonts/Helvetica.otf);
 }
 
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url(assets/fonts/HelveticaBold.otf);
+}
+
 .font-moranga-medium{
     font-family: 'MorangaMedium', sans-serif;
 }
@@ -28,4 +33,8 @@
 
 .font-helvetica{
     font-family: 'Helvetica', sans-serif;
+}
+
+.font-helvetica-bold{
+    font-family: 'HelveticaBold', sans-serif;
 }

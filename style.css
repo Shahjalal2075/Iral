@@ -47,3 +47,24 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.gamesbg {
+    background-image: url(assets/images/gamebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.quizbg {
+    background-image: url(assets/images/quizbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.bgquizaction {
+    background-image: url(assets/images/Rectangle\ 75.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
