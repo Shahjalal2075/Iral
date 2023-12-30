@@ -8,6 +8,7 @@
     background-image: url(assets/images/marketingbg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .assbg {
@@ -32,6 +33,12 @@
 
 .leadbg {
     background-image: url(assets/images/leadbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leadsbg {
+    background-image: url(assets/images/leadsbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
