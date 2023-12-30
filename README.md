@@ -1,3 +1,3 @@
 # Front-End Website for Iral Connect
 
-<a href="https://iral-connect.surge.sh/">Home</a>
+- <a target="_blank" href="https://iral-connect.surge.sh/"><b>Home</b></a>
